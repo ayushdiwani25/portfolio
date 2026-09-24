@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
+import NavbarLogo from "./NavbarLogo";
 import "./App.css";
 
 const skills = [
@@ -155,9 +156,7 @@ function App() {
         className="site-nav mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-10"
         aria-label="Main navigation"
       >
-        <a className="brand" href="#top" aria-label="Aayush Divani home">
-          AD<span>.</span>
-        </a>
+        <NavbarLogo />
         <div className="hidden items-center gap-8 text-xs font-bold uppercase tracking-[0.16em] text-ink/60 sm:flex">
           <a href="#work">Work</a>
           <a href="#experience">Experience</a>

@@ -1,5 +1,338 @@
 .scroll-progress { position: fixed; inset: 0 auto auto 0; z-index: 20; width: 100%; height: 4px; transform: scaleX(0); transform-origin: left; background: #f06449; }
-.site-nav { position: relative; z-index: 2; }.brand { font-family: 'DM Mono', monospace; font-size: 1.2rem; font-weight: 500; letter-spacing: -.1em; }.brand span, .eyebrow, .project-type, .contact-section .eyebrow { color: #f06449; }.nav-cta { border: 1px solid #17221f; padding: .62rem .9rem; font-family: 'DM Mono', monospace; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }.eyebrow { font-family: 'DM Mono', monospace; font-size: .7rem; font-weight: 500; letter-spacing: .15em; text-transform: uppercase; }.hero-title, .section-heading h2, .contact-section h2 { max-width: 730px; margin: 1.15rem 0 1.6rem; font-size: clamp(3.6rem, 8vw, 7.5rem); font-weight: 500; letter-spacing: -.07em; line-height: .88; }em { font-family: 'Playfair Display', serif; font-weight: 600; }.hero-copy { max-width: 480px; color: rgba(23,34,31,.7); font-size: 1.05rem; line-height: 1.6; }.button { display: inline-flex; align-items: center; gap: 1rem; padding: .9rem 1.1rem; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }.button-primary { background: #17221f; color: #f3f0e9; }.button-primary span, .text-link span, .project-link span, .contact-email span { color: #f06449; font-size: 1.15rem; }.text-link { border-bottom: 1px solid #17221f; padding-bottom: .25rem; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }.hero-card { position: relative; min-height: 365px; display: flex; flex-direction: column; justify-content: space-between; padding: 1.2rem; background: #e4decd; border: 1px solid rgba(23,34,31,.35); box-shadow: 12px 12px 0 #f06449; }.hero-card-top, .hero-card-bottom { display: flex; justify-content: space-between; gap: .5rem; font: .58rem 'DM Mono', monospace; letter-spacing: .08em; }.hero-card-top { color: #f06449; }.status-dot { width: 7px; height: 7px; border-radius: 50%; background: #f06449; box-shadow: 0 0 0 3px rgba(240,100,73,.2); }.monogram { align-self: center; color: #17221f; font-size: clamp(7rem, 18vw, 12rem); font-weight: 700; letter-spacing: -.16em; line-height: .8; }.monogram span { color: #f06449; }.ticker { overflow: hidden; white-space: nowrap; background: #f06449; color: #17221f; font: .7rem 'DM Mono', monospace; font-weight: 500; letter-spacing: .1em; }.ticker div { padding: .8rem 0; animation: ticker 24s linear infinite; }.ticker span { margin: 0 1.5rem; } @keyframes ticker { to { transform: translateX(-30%); } }.section-heading h2 { font-size: clamp(3rem, 6vw, 5.8rem); }.project-card { display: grid; grid-template-columns: auto 1fr 1.1fr; gap: 2rem; align-items: start; margin-top: 4rem; padding: 1.5rem 0 3rem; border-top: 1px solid rgba(23,34,31,.28); }.project-number { color: #f06449; font: .8rem 'DM Mono', monospace; }.project-content h3 { margin: .5rem 0 1rem; font-size: clamp(2.4rem, 4vw, 4.6rem); font-weight: 500; letter-spacing: -.07em; line-height: .9; }.project-description { max-width: 370px; color: rgba(23,34,31,.7); line-height: 1.6; }.tag-list { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.5rem 0 2rem; }.tag-list span { border: 1px solid rgba(23,34,31,.28); padding: .35rem .5rem; font: .62rem 'DM Mono', monospace; }.project-link { font: .75rem 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; }.project-link span { margin-left: .5rem; }.project-visual { min-height: 315px; padding: 2rem; background: #cfddd2; }.visual-window { overflow: hidden; height: 100%; background: #f3f0e9; border: 1px solid #17221f; box-shadow: 8px 8px 0 #17221f; }.window-bar { display: flex; align-items: center; gap: .4rem; border-bottom: 1px solid #17221f; padding: .55rem .7rem; font: .6rem 'DM Mono', monospace; }.window-bar i { display: block; width: 7px; height: 7px; border: 1px solid #17221f; border-radius: 50%; }.window-bar span { margin-left: auto; color: rgba(23,34,31,.55); }.visual-body { position: relative; display: flex; min-height: 230px; align-items: center; justify-content: center; overflow: hidden; background: #f06449; }.visual-label { position: absolute; top: 1.2rem; left: 1rem; font-size: .65rem; font-weight: 700; line-height: .95; letter-spacing: .05em; }.visual-label b { font-family: 'Playfair Display', serif; font-size: 1rem; }.visual-circle { display: grid; width: 155px; height: 155px; place-items: center; border: 1px solid #17221f; border-radius: 50%; color: #f3f0e9; font: 3.6rem 'Playfair Display', serif; transform: rotate(-12deg); }.visual-line { position: absolute; right: -5%; bottom: 1.2rem; width: 110%; border-top: 1px solid #17221f; transform: rotate(-12deg); }.dark-section { background: #17221f; color: #f3f0e9; }.dark-section .eyebrow { color: #f06449; }.dark-section .section-heading h2 em { color: #e4decd; }.experience-list { margin-top: 5rem; }.experience-item { display: grid; grid-template-columns: .65fr 1.35fr; gap: 2rem; padding: 2rem 0; border-top: 1px solid rgba(243,240,233,.25); }.experience-period { color: #e4decd; font: .7rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }.experience-item h3 { margin: 0; font-size: 1.5rem; font-weight: 500; }.experience-company { margin-top: .25rem; color: #f06449; font-family: 'Playfair Display', serif; font-style: italic; }.experience-item ul { margin: 1.3rem 0 0; padding-left: 1.1rem; color: rgba(243,240,233,.68); font-size: .95rem; line-height: 1.65; }.skills-grid { padding-top: 1rem; }.skill-row { display: grid; grid-template-columns: 48px 1fr; gap: 1rem; padding: 1.4rem 0; border-top: 1px solid rgba(23,34,31,.25); }.skill-row > span { color: #f06449; font: .7rem 'DM Mono', monospace; }.skill-row h3 { margin: 0 0 .35rem; font-size: 1.05rem; }.skill-row p { color: rgba(23,34,31,.65); font-size: .95rem; line-height: 1.6; }.contact-section { background: #e4decd; border-top: 1px solid rgba(23,34,31,.2); }.contact-section h2 { max-width: 650px; }.contact-email { display: inline-flex; align-items: center; gap: 1rem; border-bottom: 2px solid #17221f; font: clamp(1.25rem, 3vw, 2.8rem) 'Playfair Display', serif; font-style: italic; }.contact-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 6rem; color: rgba(23,34,31,.65); font: .7rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .06em; }.social-links { display: flex; gap: 1.5rem; color: #17221f; }
+.site-nav { position: relative; z-index: 2; }
+
+/* Custom Animated Navbar Brand Logo */
+.custom-navbar-logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.35rem 0.5rem 0.35rem 0.2rem;
+  border-radius: 14px;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+}
+
+.custom-navbar-logo:hover {
+  opacity: 1 !important;
+}
+
+/* Badge Orbit & Shield Container */
+.logo-badge-container {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Rotating SVG Orbit Track */
+.logo-orbit-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  animation: spinOrbit 14s linear infinite;
+  transform-origin: center;
+  transition: animation-duration 0.4s ease;
+}
+
+.custom-navbar-logo:hover .logo-orbit-ring {
+  animation-duration: 4s;
+}
+
+.orbit-circle {
+  transition: stroke 0.3s ease;
+}
+
+.custom-navbar-logo:hover .orbit-circle {
+  stroke: #f06449;
+}
+
+.orbit-node {
+  filter: drop-shadow(0 0 5px #f06449);
+  transition: r 0.3s ease;
+}
+
+.custom-navbar-logo:hover .orbit-node {
+  r: 2.8;
+}
+
+/* Tactile Dark Squircle Shield */
+.logo-shield {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #17221f;
+  border-radius: 11px;
+  border: 1px solid rgba(240, 100, 73, 0.45);
+  box-shadow: 3px 3px 0 #f06449;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+}
+
+.custom-navbar-logo:hover .logo-shield {
+  transform: translateY(-1px) rotate(-3deg) scale(1.04);
+  box-shadow: 4px 4px 0 #f06449, 0 8px 18px -4px rgba(240, 100, 73, 0.35);
+  border-color: #f06449;
+}
+
+/* Shimmer Sheen Sweep */
+.logo-sheen {
+  position: absolute;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.38) 50%,
+    transparent 65%
+  );
+  transform: translateX(-130%) rotate(25deg);
+  animation: logoSheenSweep 5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.custom-navbar-logo:hover .logo-sheen {
+  animation: logoSheenSweep 2s ease-in-out infinite;
+}
+
+/* Background Ambient Glow inside shield */
+.logo-shield-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 75% 25%, rgba(240, 100, 73, 0.32), transparent 70%);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.custom-navbar-logo:hover .logo-shield-glow {
+  opacity: 1;
+}
+
+/* Monogram SVG */
+.logo-monogram-svg {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.custom-navbar-logo:hover .logo-monogram-svg {
+  filter: drop-shadow(0 0 4px rgba(240, 100, 73, 0.6));
+}
+
+
+
+/* Brand Typography & Lockup */
+.logo-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
+  line-height: 1.1;
+}
+
+.logo-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.32rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #17221f;
+}
+
+.logo-name-first {
+  color: #17221f;
+  font-weight: 700;
+  transition: color 0.25s ease;
+}
+
+.logo-name-last {
+  color: #17221f;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.22rem;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.custom-navbar-logo:hover .logo-name-last {
+  color: #f06449;
+  transform: translateX(1px);
+}
+
+.logo-accent-dot {
+  color: #f06449;
+  font-size: 1.4rem;
+  line-height: 0;
+  transform: translateY(-0.04em);
+  display: inline-block;
+  animation: logoDotHop 2.5s ease-in-out infinite;
+}
+
+.logo-meta-row {
+  display: flex;
+  align-items: center;
+}
+
+.logo-role-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(23, 34, 31, 0.68);
+  transition: color 0.25s ease;
+}
+
+.custom-navbar-logo:hover .logo-role-pill {
+  color: #f06449;
+}
+
+.role-indicator-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #f06449;
+  box-shadow: 0 0 0 2px rgba(240, 100, 73, 0.2);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.custom-navbar-logo:hover .role-indicator-dot {
+  transform: scale(1.3);
+  background-color: #ff7854;
+}
+
+.role-text-slider {
+  display: inline-grid;
+  height: 1.15em;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.role-text-primary,
+.role-text-hover {
+  grid-area: 1 / 1;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.role-text-primary {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.role-text-hover {
+  transform: translateY(110%);
+  opacity: 0;
+  color: #f06449;
+  font-weight: 700;
+}
+
+.custom-navbar-logo:hover .role-text-primary {
+  transform: translateY(-110%);
+  opacity: 0;
+}
+
+.custom-navbar-logo:hover .role-text-hover {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+/* Monogram Glyphs Interactive Physics */
+.glyph-a {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), stroke-width 0.3s ease;
+  transform-origin: 13.5px 18px;
+}
+
+.glyph-d {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), stroke-width 0.3s ease, fill 0.3s ease;
+  transform-origin: 24px 18px;
+}
+
+.glyph-dot {
+  transition: transform 0.3s ease, fill 0.3s ease;
+  transform-origin: 31px 26px;
+}
+
+.custom-navbar-logo:hover .glyph-a {
+  transform: translateY(-0.8px) scale(1.02);
+  stroke-width: 3.4;
+}
+
+.custom-navbar-logo:hover .glyph-d {
+  transform: scale(1.05) translateX(0.4px);
+  fill: rgba(240, 100, 73, 0.28);
+  stroke-width: 3.4;
+}
+
+.custom-navbar-logo:hover .glyph-dot {
+  transform: scale(1.3);
+  fill: #ff7854;
+}
+
+/* Keyframes */
+@keyframes spinOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logoSheenSweep {
+  0% {
+    transform: translateX(-140%) rotate(25deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  35% {
+    transform: translateX(180%) rotate(25deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(180%) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes logoDotHop {
+  0%, 100% {
+    transform: translateY(-0.04em) scale(1);
+  }
+  50% {
+    transform: translateY(-0.18em) scale(1.25);
+    color: #ff7854;
+    text-shadow: 0 0 6px rgba(240, 100, 73, 0.5);
+  }
+}
+
+/* Legacy .brand support */
+.brand { position: relative; display: inline-flex; align-items: flex-end; gap: .04em; font-family: 'DM Mono', monospace; font-size: 1.55rem; font-weight: 700; letter-spacing: -.12em; line-height: 1; text-decoration: none; transition: transform .25s ease; }.brand:hover { transform: translateY(-2px); }.brand-stack { position: relative; display: inline-flex; align-items: flex-end; transform: skewX(-8deg); }.brand-mark { position: relative; display: inline-block; color: #17221f; transform: translateY(0); transition: transform .25s ease, color .25s ease; text-shadow: 0 0 0 rgba(0,0,0,0); }.brand-mark-alt { position: relative; left: -.14em; color: #f06449; transform: translateY(.08em); }.brand:hover .brand-mark { transform: translateY(-2px); }.brand:hover .brand-mark-alt { transform: translateY(-1px); }.brand-dot { color: #f06449; font-size: 1.9rem; line-height: 0; transform: translateY(-.18em); display: inline-block; animation: brandPulse 2s ease-in-out infinite; }.eyebrow, .project-type, .contact-section .eyebrow { color: #f06449; }.nav-cta { border: 1px solid #17221f; padding: .62rem .9rem; font-family: 'DM Mono', monospace; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }@keyframes brandPulse { 0%, 100% { transform: translateY(-.18em) scale(1); opacity: 1; } 50% { transform: translateY(-.28em) scale(1.18); opacity: .9; } }.eyebrow { font-family: 'DM Mono', monospace; font-size: .7rem; font-weight: 500; letter-spacing: .15em; text-transform: uppercase; }.hero-title, .section-heading h2, .contact-section h2 { max-width: 730px; margin: 1.15rem 0 1.6rem; font-size: clamp(3.6rem, 8vw, 7.5rem); font-weight: 500; letter-spacing: -.07em; line-height: .88; }em { font-family: 'Playfair Display', serif; font-weight: 600; }.hero-copy { max-width: 480px; color: rgba(23,34,31,.7); font-size: 1.05rem; line-height: 1.6; }.button { display: inline-flex; align-items: center; gap: 1rem; padding: .9rem 1.1rem; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }.button-primary { background: #17221f; color: #f3f0e9; }.button-primary span, .text-link span, .project-link span, .contact-email span { color: #f06449; font-size: 1.15rem; }.text-link { border-bottom: 1px solid #17221f; padding-bottom: .25rem; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }.hero-card { position: relative; min-height: 365px; display: flex; flex-direction: column; justify-content: space-between; padding: 1.2rem; background: #e4decd; border: 1px solid rgba(23,34,31,.35); box-shadow: 12px 12px 0 #f06449; }.hero-card-top, .hero-card-bottom { display: flex; justify-content: space-between; gap: .5rem; font: .58rem 'DM Mono', monospace; letter-spacing: .08em; }.hero-card-top { color: #f06449; }.status-dot { width: 7px; height: 7px; border-radius: 50%; background: #f06449; box-shadow: 0 0 0 3px rgba(240,100,73,.2); }.monogram { align-self: center; color: #17221f; font-size: clamp(7rem, 18vw, 12rem); font-weight: 700; letter-spacing: -.16em; line-height: .8; }.monogram span { color: #f06449; }.ticker { overflow: hidden; white-space: nowrap; background: #f06449; color: #17221f; font: .7rem 'DM Mono', monospace; font-weight: 500; letter-spacing: .1em; }.ticker div { padding: .8rem 0; animation: ticker 24s linear infinite; }.ticker span { margin: 0 1.5rem; } @keyframes ticker { to { transform: translateX(-30%); } }.section-heading h2 { font-size: clamp(3rem, 6vw, 5.8rem); }.project-card { display: grid; grid-template-columns: auto 1fr 1.1fr; gap: 2rem; align-items: start; margin-top: 4rem; padding: 1.5rem 0 3rem; border-top: 1px solid rgba(23,34,31,.28); }.project-number { color: #f06449; font: .8rem 'DM Mono', monospace; }.project-content h3 { margin: .5rem 0 1rem; font-size: clamp(2.4rem, 4vw, 4.6rem); font-weight: 500; letter-spacing: -.07em; line-height: .9; }.project-description { max-width: 370px; color: rgba(23,34,31,.7); line-height: 1.6; }.tag-list { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.5rem 0 2rem; }.tag-list span { border: 1px solid rgba(23,34,31,.28); padding: .35rem .5rem; font: .62rem 'DM Mono', monospace; }.project-link { font: .75rem 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; }.project-link span { margin-left: .5rem; }.project-visual { min-height: 315px; padding: 2rem; background: #cfddd2; }.visual-window { overflow: hidden; height: 100%; background: #f3f0e9; border: 1px solid #17221f; box-shadow: 8px 8px 0 #17221f; }.window-bar { display: flex; align-items: center; gap: .4rem; border-bottom: 1px solid #17221f; padding: .55rem .7rem; font: .6rem 'DM Mono', monospace; }.window-bar i { display: block; width: 7px; height: 7px; border: 1px solid #17221f; border-radius: 50%; }.window-bar span { margin-left: auto; color: rgba(23,34,31,.55); }.visual-body { position: relative; display: flex; min-height: 230px; align-items: center; justify-content: center; overflow: hidden; background: #f06449; }.visual-label { position: absolute; top: 1.2rem; left: 1rem; font-size: .65rem; font-weight: 700; line-height: .95; letter-spacing: .05em; }.visual-label b { font-family: 'Playfair Display', serif; font-size: 1rem; }.visual-circle { display: grid; width: 155px; height: 155px; place-items: center; border: 1px solid #17221f; border-radius: 50%; color: #f3f0e9; font: 3.6rem 'Playfair Display', serif; transform: rotate(-12deg); }.visual-line { position: absolute; right: -5%; bottom: 1.2rem; width: 110%; border-top: 1px solid #17221f; transform: rotate(-12deg); }.dark-section { background: #17221f; color: #f3f0e9; }.dark-section .eyebrow { color: #f06449; }.dark-section .section-heading h2 em { color: #e4decd; }.experience-list { margin-top: 5rem; }.experience-item { display: grid; grid-template-columns: .65fr 1.35fr; gap: 2rem; padding: 2rem 0; border-top: 1px solid rgba(243,240,233,.25); }.experience-period { color: #e4decd; font: .7rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }.experience-item h3 { margin: 0; font-size: 1.5rem; font-weight: 500; }.experience-company { margin-top: .25rem; color: #f06449; font-family: 'Playfair Display', serif; font-style: italic; }.experience-item ul { margin: 1.3rem 0 0; padding-left: 1.1rem; color: rgba(243,240,233,.68); font-size: .95rem; line-height: 1.65; }.skills-grid { padding-top: 1rem; }.skill-row { display: grid; grid-template-columns: 48px 1fr; gap: 1rem; padding: 1.4rem 0; border-top: 1px solid rgba(23,34,31,.25); }.skill-row > span { color: #f06449; font: .7rem 'DM Mono', monospace; }.skill-row h3 { margin: 0 0 .35rem; font-size: 1.05rem; }.skill-row p { color: rgba(23,34,31,.65); font-size: .95rem; line-height: 1.6; }.contact-section { background: #e4decd; border-top: 1px solid rgba(23,34,31,.2); }.contact-section h2 { max-width: 650px; }.contact-email { display: inline-flex; align-items: center; gap: 1rem; border-bottom: 2px solid #17221f; font: clamp(1.25rem, 3vw, 2.8rem) 'Playfair Display', serif; font-style: italic; }.contact-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 6rem; color: rgba(23,34,31,.65); font: .7rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .06em; }.social-links { display: flex; gap: 1.5rem; color: #17221f; }
 @media (max-width: 700px) { .hero-card { min-height: 290px; }.project-card { grid-template-columns: 1fr; gap: 1rem; }.project-number { order: -2; }.project-visual { margin-top: 1rem; padding: 1rem; }.experience-item { grid-template-columns: 1fr; gap: .8rem; }.contact-meta { margin-top: 4rem; }.social-links { width: 100%; }.hero-title { font-size: clamp(3.4rem, 18vw, 6rem); } }
 
 .hero {
