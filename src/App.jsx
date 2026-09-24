@@ -165,7 +165,7 @@ function App() {
         </div>
         <a
           className="nav-cta"
-          href="/Aayush_Resume.pdf"
+          href="/portfolio/Aayush_Resume.pdf"
           target="_blank"
           rel="noreferrer"
         >
@@ -229,7 +229,7 @@ function App() {
           </div>
           <img
             className="profile-image"
-            src="/myimage.jpeg"
+            src="/portfolio/myimage.jpeg"
             alt="Portrait of Aayush Divani"
           />
           <div className="hero-card-bottom">
