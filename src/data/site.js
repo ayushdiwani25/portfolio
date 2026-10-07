@@ -12,7 +12,7 @@ export const SITE = {
   github: 'https://github.com/ayushdiwani25',
   linkedin: 'https://www.linkedin.com/in/aayush-divani-520204368/',
   instagram: 'https://www.instagram.com/ayush_diwani_25/',
-  resume: `${BASE}Aayush_Resume.pdf`,
+  resume: `${BASE}Aayush_Divani_Resume.pdf`,
   photo: `${BASE}profile.webp`,
   photoSmall: `${BASE}profile-sm.webp`,
   available: true,
