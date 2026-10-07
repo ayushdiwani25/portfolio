@@ -32,7 +32,7 @@ const Hero = () => (
         </m.div>
       </div>
 
-      <m.figure
+      <m.figure IN
         className="hero-card"
         initial={{ opacity: 0, rotate: 5, scale: 0.94 }}
         animate={{ opacity: 1, rotate: 3, scale: 1 }}
@@ -50,7 +50,7 @@ const Hero = () => (
           fetchPriority="high"
           decoding="async"
         />
-        <figcaption className="hero-card-bottom"><span>AHMEDABAD, IN</span></figcaption>
+        <figcaption className="hero-card-bottom"><span>BHUJ</span></figcaption>
       </m.figure>
     </section>
 
