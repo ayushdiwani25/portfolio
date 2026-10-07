@@ -10,7 +10,7 @@ export const SITE = {
   phoneHref: 'tel:+917861934655',
   location: 'Ahmedabad, Gujarat, India',
   github: 'https://github.com/ayushdiwani25',
-  linkedin: 'https://www.linkedin.com/in/aayush-patel-520204368',
+  linkedin: 'https://www.linkedin.com/in/aayush-divani-520204368/',
   instagram: 'https://www.instagram.com/ayush_diwani_25/',
   resume: `${BASE}Aayush_Resume.pdf`,
   photo: `${BASE}profile.webp`,
