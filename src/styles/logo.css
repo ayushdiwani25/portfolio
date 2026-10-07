@@ -1,0 +1,338 @@
+/* Custom Animated Navbar Brand Logo */
+.custom-navbar-logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.35rem 0.5rem 0.35rem 0.2rem;
+  border-radius: 14px;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+}
+
+.custom-navbar-logo:hover {
+  opacity: 1 !important;
+}
+
+/* Badge Orbit & Shield Container */
+.logo-badge-container {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Rotating SVG Orbit Track */
+.logo-orbit-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  animation: spinOrbit 14s linear infinite;
+  transform-origin: center;
+  transition: animation-duration 0.4s ease;
+}
+
+.custom-navbar-logo:hover .logo-orbit-ring {
+  animation-duration: 4s;
+}
+
+.orbit-circle {
+  transition: stroke 0.3s ease;
+}
+
+.custom-navbar-logo:hover .orbit-circle {
+  stroke: #f06449;
+}
+
+.orbit-node {
+  filter: drop-shadow(0 0 5px #f06449);
+  transition: r 0.3s ease;
+}
+
+.custom-navbar-logo:hover .orbit-node {
+  r: 2.8;
+}
+
+/* Tactile Dark Squircle Shield */
+.logo-shield {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #17221f;
+  border-radius: 11px;
+  border: 1px solid rgba(240, 100, 73, 0.45);
+  box-shadow: 3px 3px 0 #f06449;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+}
+
+.custom-navbar-logo:hover .logo-shield {
+  transform: translateY(-1px) rotate(-3deg) scale(1.04);
+  box-shadow: 4px 4px 0 #f06449, 0 8px 18px -4px rgba(240, 100, 73, 0.35);
+  border-color: #f06449;
+}
+
+/* Shimmer Sheen Sweep */
+.logo-sheen {
+  position: absolute;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.38) 50%,
+    transparent 65%
+  );
+  transform: translateX(-130%) rotate(25deg);
+  animation: logoSheenSweep 5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.custom-navbar-logo:hover .logo-sheen {
+  animation: logoSheenSweep 2s ease-in-out infinite;
+}
+
+/* Background Ambient Glow inside shield */
+.logo-shield-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 75% 25%, rgba(240, 100, 73, 0.32), transparent 70%);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.custom-navbar-logo:hover .logo-shield-glow {
+  opacity: 1;
+}
+
+/* Monogram SVG */
+.logo-monogram-svg {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.custom-navbar-logo:hover .logo-monogram-svg {
+  filter: drop-shadow(0 0 4px rgba(240, 100, 73, 0.6));
+}
+
+
+
+/* Brand Typography & Lockup */
+.logo-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
+  line-height: 1.1;
+}
+
+.logo-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.32rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.logo-name-first {
+  color: var(--ink);
+  font-weight: 700;
+  transition: color 0.25s ease;
+}
+
+.logo-name-last {
+  color: var(--ink);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.22rem;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.custom-navbar-logo:hover .logo-name-last {
+  color: var(--accent-text);
+  transform: translateX(1px);
+}
+
+.logo-accent-dot {
+  color: #f06449;
+  font-size: 1.4rem;
+  line-height: 0;
+  transform: translateY(-0.04em);
+  display: inline-block;
+  animation: logoDotHop 2.5s ease-in-out infinite;
+}
+
+.logo-meta-row {
+  display: flex;
+  align-items: center;
+}
+
+.logo-role-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  transition: color 0.25s ease;
+}
+
+.custom-navbar-logo:hover .logo-role-pill {
+  color: var(--accent-text);
+}
+
+.role-indicator-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #f06449;
+  box-shadow: 0 0 0 2px rgba(240, 100, 73, 0.2);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.custom-navbar-logo:hover .role-indicator-dot {
+  transform: scale(1.3);
+  background-color: #ff7854;
+}
+
+.role-text-slider {
+  display: inline-grid;
+  height: 1.15em;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.role-text-primary,
+.role-text-hover {
+  grid-area: 1 / 1;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.role-text-primary {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.role-text-hover {
+  transform: translateY(110%);
+  opacity: 0;
+  color: var(--accent-text);
+  font-weight: 700;
+}
+
+.custom-navbar-logo:hover .role-text-primary {
+  transform: translateY(-110%);
+  opacity: 0;
+}
+
+.custom-navbar-logo:hover .role-text-hover {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+/* Monogram Glyphs Interactive Physics */
+.glyph-a {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), stroke-width 0.3s ease;
+  transform-origin: 13.5px 18px;
+}
+
+.glyph-d {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), stroke-width 0.3s ease, fill 0.3s ease;
+  transform-origin: 24px 18px;
+}
+
+.glyph-dot {
+  transition: transform 0.3s ease, fill 0.3s ease;
+  transform-origin: 31px 26px;
+}
+
+.custom-navbar-logo:hover .glyph-a {
+  transform: translateY(-0.8px) scale(1.02);
+  stroke-width: 3.4;
+}
+
+.custom-navbar-logo:hover .glyph-d {
+  transform: scale(1.05) translateX(0.4px);
+  fill: rgba(240, 100, 73, 0.28);
+  stroke-width: 3.4;
+}
+
+.custom-navbar-logo:hover .glyph-dot {
+  transform: scale(1.3);
+  fill: #ff7854;
+}
+
+/* Keyframes */
+@keyframes spinOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logoSheenSweep {
+  0% {
+    transform: translateX(-140%) rotate(25deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  35% {
+    transform: translateX(180%) rotate(25deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(180%) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes logoDotHop {
+  0%, 100% {
+    transform: translateY(-0.04em) scale(1);
+  }
+  50% {
+    transform: translateY(-0.18em) scale(1.25);
+    color: #ff7854;
+    text-shadow: 0 0 6px rgba(240, 100, 73, 0.5);
+  }
+}
+
+
+/* Small screens: keep logo compact */
+@media (max-width: 420px) {
+  .logo-role-pill { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-orbit-ring, .logo-sheen, .logo-accent-dot { animation: none; }
+}
