@@ -36,7 +36,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
   const close = () => setOpen(false);
 
   return (
-    <header className={`site-header${stuck ? ' is-stuck' : ''}`}>
+    <header className={`site-header${stuck ? ' is-stuck' : ''}${open ? ' is-menu-open' : ''}`}>
       <nav className="site-nav container" aria-label="Main navigation">
         <NavbarLogo onClick={close} />
 
