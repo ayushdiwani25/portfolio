@@ -1,6 +1,95 @@
+import { useState, useEffect } from 'react';
 import { m } from 'framer-motion';
 import { SITE, PROJECTS } from '../data/site';
 import Reveal from './Reveal';
+
+const ProjectVisual = ({ p }) => {
+  const images = p.images && p.images.length > 0 ? p.images : (p.image ? [p.image] : []);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  return (
+    <a
+      className="project-visual"
+      href={p.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Open ${p.title} live demo in a new tab`}
+    >
+      <div className="visual-window">
+        <div className="window-bar">
+          <div className="window-dots" aria-hidden="true">
+            <i className="dot dot-red" />
+            <i className="dot dot-yellow" />
+            <i className="dot dot-green" />
+          </div>
+          <span className="window-url">{p.label}</span>
+          <span className="window-badge" aria-hidden="true">
+            <span className="live-dot" /> Live
+          </span>
+        </div>
+
+        {p.video ? (
+          <div className="visual-media-container">
+            <video
+              className="visual-media"
+              src={p.video}
+              poster={p.image}
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          </div>
+        ) : images.length > 0 ? (
+          <div className="visual-media-container">
+            {images.map((img, idx) => (
+              <img
+                key={img}
+                className={`visual-media visual-slide ${idx === currentIndex ? 'is-active' : ''}`}
+                src={img}
+                alt={`${p.title} preview screenshot ${idx + 1}`}
+                loading={idx === 0 ? 'eager' : 'lazy'}
+              />
+            ))}
+            {images.length > 1 && (
+              <div className="slider-indicators" aria-hidden="true">
+                {images.map((_, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    className={`slider-dot ${idx === currentIndex ? 'is-active' : ''}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setCurrentIndex(idx);
+                    }}
+                    tabIndex={-1}
+                    aria-label={`Slide ${idx + 1}`}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className="visual-body" style={{ background: p.tone }}>
+            <span className="visual-label">
+              {p.headline[0]}<br /><b>{p.headline[1]}</b>
+            </span>
+            <div className="visual-circle">{p.visual}</div>
+            <div className="visual-line" />
+          </div>
+        )}
+      </div>
+    </a>
+  );
+};
 
 const Project = ({ p }) => (
   <m.article
@@ -23,8 +112,8 @@ const Project = ({ p }) => (
         {p.stack.map((t) => <li key={t}>{t}</li>)}
       </ul>
       <div className="project-links">
-        <a className="project-link" href={p.link} target="_blank" rel="noopener noreferrer">
-          View live project <span aria-hidden="true">↗</span>
+        <a className="button button-primary" href={p.link} target="_blank" rel="noopener noreferrer">
+          Live Demo <span aria-hidden="true">↗</span>
           <span className="sr-only"> ({p.title}, opens in a new tab)</span>
         </a>
         {p.code && (
@@ -36,16 +125,7 @@ const Project = ({ p }) => (
       </div>
     </div>
 
-    <a className="project-visual" href={p.link} target="_blank" rel="noopener noreferrer" tabIndex={-1} aria-hidden="true">
-      <div className="visual-window">
-        <div className="window-bar"><i /><i /><i /><span>{p.label}</span></div>
-        <div className="visual-body" style={{ background: p.tone }}>
-          <span className="visual-label">{p.headline[0]}<br /><b>{p.headline[1]}</b></span>
-          <div className="visual-circle">{p.visual}</div>
-          <div className="visual-line" />
-        </div>
-      </div>
-    </a>
+    <ProjectVisual p={p} />
   </m.article>
 );
 
